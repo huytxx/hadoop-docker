@@ -82,3 +82,4 @@ sudo ./start-container.sh 5
 
 do 5~6 like section A
 
+<!-- COPY AND UPDATE FROM https://github.com/kiwenlau/hadoop-cluster-docker -->
