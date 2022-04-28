@@ -2,7 +2,7 @@
 ##### 1. pull docker image
 
 ```
-sudo docker pull kiwenlau/hadoop:1.0
+./build-image.sh
 ```
 
 ##### 3. create hadoop network
