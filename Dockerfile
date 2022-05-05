@@ -6,10 +6,10 @@ WORKDIR /root
 RUN apt-get update && apt-get install -y openssh-server openjdk-8-jdk wget nano vim
 
 # install hadoop 2.7.2
-RUN wget https://downloads.apache.org/hadoop/common/hadoop-3.3.2/hadoop-3.3.2.tar.gz && \
-    tar -xzvf hadoop-3.3.2.tar.gz && \
-    mv hadoop-3.3.2 /usr/local/hadoop && \
-    rm hadoop-3.3.2.tar.gz
+RUN wget https://downloads.apache.org/hadoop/common/hadoop-2.7.2/hadoop-2.7.2.tar.gz && \
+    tar -xzvf hadoop-2.7.2.tar.gz && \
+    mv hadoop-2.7.2 /usr/local/hadoop && \
+    rm hadoop-2.7.2.tar.gz
 
 # set environment variable
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
