@@ -14,15 +14,15 @@ RUN wget https://github.com/kiwenlau/compile-hadoop/releases/download/2.7.2/hado
 #intall pig
 RUN wget https://downloads.apache.org/pig/pig-0.17.0/pig-0.17.0.tar.gz && \
     tar -xvf pig-0.17.0.tar.gz && \
-    mv pig-0.17.0 /usr/local/pig && \
+    mv pig-0.17.0 /usr/local/pig
 
 # set environment variable
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ENV HADOOP_HOME=/usr/local/hadoop 
 ENV PATH=$PATH:/usr/local/hadoop/bin:/usr/local/hadoop/sbin 
-ENV export PIG_HOME=/usr/local/pig
-ENV export PATH=$PATH:/usr/local/pig/bin
-ENV export PIG_CLASSPATH=$HADOOP_HOME/conf
+ENV PIG_HOME=/usr/local/pig
+ENV PATH=$PATH:/usr/local/pig/bin
+ENV PIG_CLASSPATH=$HADOOP_HOME/conf
 
 
 # ssh without key
