@@ -1,15 +1,5 @@
 <?xml version="1.0"?>
 <configuration>
-    <property> 
-        <name>dfs.data.dir</name> 
-        <value>/opt/hadoop/hadoop/dfs/name/data</value> 
-        <final>true</final> 
-    </property> 
-    <property> 
-        <name>dfs.name.dir</name> 
-        <value>/opt/hadoop/hadoop/dfs/name</value> 
-        <final>true</final> 
-    </property> 
     <property>
         <name>dfs.namenode.name.dir</name>
         <value>file:///root/hdfs/namenode</value>
